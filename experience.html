@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namie Nakamura | Experience</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background: #faf8f3;
+      color: #1b1b1b;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 64px;
+      border-bottom: 1px solid #e9e1d6;
+      background: rgba(250, 248, 243, 0.94);
+      backdrop-filter: blur(10px);
+    }
+
+    .site-name {
+      font-size: 31px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 34px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 20px;
+      color: #38322d;
+    }
+
+    .nav-links a {
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #1b1b1b;
+    }
+
+    .page-header {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 90px 48px 40px;
+      position: relative;
+    }
+
+    .sparkle {
+      position: absolute;
+      color: #d9b6a1;
+      opacity: 0.8;
+      pointer-events: none;
+      animation: floatSparkle 4.2s ease-in-out infinite;
+    }
+
+    .sparkle.one {
+      top: 72px;
+      right: 80px;
+      font-size: 16px;
+    }
+
+    .sparkle.two {
+      top: 146px;
+      right: 220px;
+      font-size: 14px;
+      animation-delay: 1.3s;
+    }
+
+    @keyframes floatSparkle {
+      0%, 100% {
+        transform: translateY(0px) scale(1);
+        opacity: 0.55;
+      }
+      50% {
+        transform: translateY(-10px) scale(1.08);
+        opacity: 1;
+      }
+    }
+
+    .eyebrow {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #8f8176;
+      margin-bottom: 14px;
+    }
+
+    .page-header h1 {
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .page-header p {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 18px;
+      color: #5d5650;
+      max-width: 700px;
+    }
+
+    .section {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 48px 36px;
+    }
+
+    .subsection-title {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8f8176;
+      margin: 40px 0 18px;
+    }
+
+    .card {
+      border-top: 1px solid #e9e1d6;
+      padding: 30px 0;
+    }
+
+    .card-meta {
+      font-size: 12px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #8f8176;
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .card h3 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .card h4 {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #5c544d;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      color: #5d5650;
+      margin-bottom: 14px;
+      max-width: 770px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .tag {
+      font-size: 11px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border: 1px solid #ddd0c1;
+      color: #6c655d;
+      background: #fffdf9;
+      text-transform: uppercase;
+    }
+
+    footer {
+      text-align: center;
+      padding: 92px 40px;
+      border-top: 1px solid #e9e1d6;
+      background: #f1e9df;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 20px;
+      color: #7b7066;
+      margin-top: 24px;
+    }
+
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
+      gap: 34px;
+      margin-bottom: 24px;
+    }
+
+    .footer-icons a {
+      font-size: 35px;
+      color: #7b7066;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+
+    .footer-icons a:hover {
+      color: #1b1b1b;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 920px) {
+      nav {
+        padding: 24px;
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .site-name {
+        font-size: 26px;
+      }
+
+      .page-header {
+        padding: 68px 24px 32px;
+      }
+
+      .page-header h1 {
+        font-size: 42px;
+      }
+
+      .section {
+        padding: 0 24px 28px;
+      }
+
+      .card h3 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="site-name">Namie Nakamura</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="experience.html" class="active">Experience</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="sparkle one">✦</div>
+      <div class="sparkle two">✦</div>
+      <div class="eyebrow">Experience</div>
+      <h1>Work, projects, and academic achievements that reflect my interest in healthcare, data, and technology.</h1>
+      <p>This page highlights the experiences and projects that have shaped my growth across bioinformatics, machine learning, and health-focused technology.</p>
+    </section>
+
+    <section class="section">
+      <div class="subsection-title">Work</div>
+
+      <div class="card">
+        <div class="card-meta">Work · Add dates here</div>
+        <h3>Add your role here</h3>
+        <h4>Add your organization here</h4>
+        <p>Replace this section with your work experience, what you contributed, and the kinds of technical or professional skills you developed through the role.</p>
+        <div class="tags">
+          <span class="tag">Data</span>
+          <span class="tag">Analysis</span>
+          <span class="tag">Communication</span>
+        </div>
+      </div>
+
+      <div class="subsection-title">Projects</div>
+
+      <div class="card">
+        <div class="card-meta">Project</div>
+        <h3>Heart Disease Prediction</h3>
+        <p>Machine learning project focused on predicting heart disease severity using clinical data. This work involved model development, evaluation, and analyzing healthcare-related risk factors through a data-driven approach.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Machine Learning</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-meta">Project</div>
+        <h3>MediSync</h3>
+        <p>Healthcare application designed to support medication management, patient wellness tracking, and caregiver communication through a more accessible digital experience.</p>
+        <div class="tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Healthcare</span>
+          <span class="tag">App Development</span>
+        </div>
+      </div>
+
+      <div class="subsection-title">Awards &amp; Honors</div>
+
+      <div class="card">
+        <div class="card-meta">Honor</div>
+        <h3>Dean’s List</h3>
+        <p>Add the semester or a short note here, such as Spring 2025 or any additional academic recognition you want recruiters to notice.</p>
+        <div class="tags">
+          <span class="tag">Academic Excellence</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-icons">
+      <a href="https://github.com/NakamuraNamie" target="_blank" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/namienakamura" target="_blank" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="nnkmr1126@gmail.com" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <p>© 2026 Namie Nakamura</p>
+  </footer>
+</body>
+</html>
