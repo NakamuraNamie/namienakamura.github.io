@@ -36,7 +36,7 @@
   .pdf-viewer {
     height: 900px;
   }
-  
+
 .desktop-only { display: none; }
   .mobile-only  { display: block; }
 }
