@@ -23,29 +23,11 @@
   overflow: hidden;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .container {
-    padding: 50px 20px;
-    text-align: center;
-  }
-
-  .title {
-    font-size: 34px;
-  }
-
-  .pdf-viewer {
-    height: 900px;
-  }
-
-  .desktop-only { display: none; }
-  .mobile-only  { display: block; }
-}
-
-/* ── NEW: desktop/mobile toggle ── */
+/* DESKTOP/MOBILE TOGGLE — must be before @media */
 .desktop-only { display: block; }
 .mobile-only  { display: none; }
 
+/* RESUME BUTTON */
 .resume-btn {
   display: inline-block;
   padding: 14px 32px;
@@ -61,4 +43,19 @@
 .resume-btn:hover {
   background: #1b1b1b;
   color: #faf8f3;
+}
+
+/* MOBILE — overrides the rules above on small screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .desktop-only { display: none; }
+  .mobile-only  { display: block; }
 }
