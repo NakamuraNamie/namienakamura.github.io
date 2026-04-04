@@ -27,6 +27,7 @@
 @media (max-width: 768px) {
   .container {
     padding: 50px 20px;
+    text-align: center;
   }
 
   .title {
@@ -37,7 +38,7 @@
     height: 900px;
   }
 
-.desktop-only { display: none; }
+  .desktop-only { display: none; }
   .mobile-only  { display: block; }
 }
 
