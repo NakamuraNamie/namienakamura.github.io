@@ -1,0 +1,65 @@
+/* EXPERIENCE PAGE */
+
+/* SECTION SPACING */
+.section {
+  padding-bottom: 40px;
+}
+
+/* SECTION TITLES */
+.subsection-title {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #916e54;
+  margin: 40px 0 18px;
+}
+
+/* CARDS */
+.card {
+  border-top: 1px solid #382c1b;
+  padding: 18px 0;
+}
+
+.card-meta {
+  font-size: 14px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #8f8176;
+  margin-bottom: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.card p {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  color: #5d5650;
+  margin-bottom: 8px;
+  max-width: 750px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .subsection-title {
+    font-size: 18px;
+    margin: 25px 0 12px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card-meta {
+    font-size: 12px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+}

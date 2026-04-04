@@ -1,0 +1,39 @@
+/* RESUME PAGE */
+
+/* MAIN CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+/* TITLE */
+.title {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+/* PDF VIEWER */
+.pdf-viewer {
+  width: 100%;
+  height: 900px;
+  border: 1px solid #e9e1d6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .pdf-viewer {
+    height: 500px;
+  }
+}
