@@ -36,4 +36,28 @@
   .pdf-viewer {
     height: 900px;
   }
+  
+.desktop-only { display: none; }
+  .mobile-only  { display: block; }
+}
+
+/* ── NEW: desktop/mobile toggle ── */
+.desktop-only { display: block; }
+.mobile-only  { display: none; }
+
+.resume-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #1b1b1b;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  color: #1b1b1b;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.resume-btn:hover {
+  background: #1b1b1b;
+  color: #faf8f3;
 }
